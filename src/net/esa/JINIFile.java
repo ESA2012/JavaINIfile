@@ -10,12 +10,11 @@ import java.util.*;
  *
  * Created by Sergei Yeryomin on 19.05.16.
  *
- *
  * TODO: INI-file comment management: add, remove, edit, read from file, save to file
  * TODO: proper exceptions types
  * TODO: arrays as values: writeIntegerArray / readIntegerArray etc.
  */
-public class JiniFile {
+public class JINIFile {
     private Map<String, Properties> iniMap;
     private File file;
 
@@ -24,7 +23,7 @@ public class JiniFile {
      * @param file  file object
      * @throws IOException
      */
-    public JiniFile(File file) throws IOException {
+    public JINIFile(File file) throws IOException {
         this.file = file;
 
         if (!file.exists()) {
