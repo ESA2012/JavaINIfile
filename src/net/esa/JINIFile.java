@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * INIFile v.1.0
+ * INIFile v.1.01
  *
  * Simple class for manage INI-files
  *
@@ -198,8 +198,8 @@ public class JINIFile {
      * @throws IOException
      */
     public void save() throws IOException {
-        try (PrintStream ps = new PrintStream(file)) {
-            ps.print(this);
+        try (PrintWriter pw = new PrintWriter(file)) {
+            pw.print(this);
         }
     }
 
